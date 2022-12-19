@@ -134,7 +134,6 @@ restartQuiz.onclick = () => {
 quitQuiz.onclick = () => {
   wrapperQuiz.classList.remove("activeQuiz");
   resetter();
-  // window.location.reload();
 };
 
 nextButton.onclick = () => {
@@ -147,21 +146,5 @@ nextButton.onclick = () => {
   }
 };
 
-/**MOBILE MENU */
-const hamburgerIcon = document.querySelector(".icon-menu");
-const mobileMenu = document.querySelector(".hidden-mobile");
-
-hamburgerIcon.onclick = () => {
-  console.log("Hello");
-  showMenu();
-}
-
-function showMenu() {
-  if (mobileMenu.style.display == "flex") {
-    mobileMenu.style.display = "none";
-  } else {
-    mobileMenu.style.display = "flex";
-  }
-}
 
 

@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=DM+Serif+Display&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(215, 215, 215);
+    font-family: 'DM Serif Display', serif;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+li {
+    padding-left: 80px;
+    color: #262629;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.btnDiv {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 95%;
+    height: auto;
+    border: 5px solid rgb(17, 75, 1);
+    border-radius: 20px;
+}
+
+h2 {
+    padding-top: 50px;
+    color: rgb(17, 75, 1);
+    font-size: 1.7rem;
+    font-size: 20px;
+    padding-top: 50px; 
+
+}
+
+.sendEmail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+form {
+    margin-top: 2rem;
+    width: 80%;
+}
+
+input, 
+textarea {
+    padding: .75rem;
+    width: 100%;
+    margin: .5rem;
+    border: 1px solid rgb(17, 75, 1);
+}
+
+textarea {
+    height: 10rem;
+}
+
+button {
+    padding: 15px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    background-color: #7a010a;
+    color:#fff ;
+    border: none;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+footer {
+    color: #fff;
+    font-size: medium;
+    opacity: 0.5;
+    background-color: #7a010a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+  padding-bottom: 1rem;
+  color: #fff;
+  font-weight: normal;
+  padding: .5rem 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 1rem 2rem;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 5rem auto 2.5rem;
+}
+
+.hidden-mobile {
+  display: none;
+  position: absolute;
+  top: 4.76rem;
+  left: -1px;
+  align-items: flex-start;
+  padding-left: 1rem;
+  background-color: rgba(38, 38, 41, 1);
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.7rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+  color: #7a010a;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 740px) {
+  .hidden-mobile {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    left: 2.5rem;
+    background: none;
+    justify-content: space-around;
+    max-width: 75%;
+  }
+
+  .hidden-mobile li {
+    color: #262629;
+    font-weight: bold;
+  }
+
+  ul {
+    justify-content: end;
+  }
+
+  .icon-menu {
+    display: none;
+  }
+
+  form {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1025px){
+
+  h1 {
+    font-size: 55px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  nav a {
+    font-size: 28px;
+  }
+
+  footer p {
+    font-size: 20px;
+  }
+
+  img {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 900px) and (orientation: portrait) {
+  
+  h1 {
+    font-size: 62px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .button-quiz {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 62px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  nav a {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 400px) and (orientation: portrait){
+  .button-quiz {
+    padding: 1rem 1.2rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 390px) and (orientation: portrait) {
+  
+  h1 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 370px) and (orientation: portrait){
+  .button-quiz {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 300px) and (orientation: portrait){
+  .button-quiz {
+    padding: .5rem;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  button {
+    font-size: 1.2rem;
+  }
+}

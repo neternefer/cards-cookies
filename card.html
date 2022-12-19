@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cards</title>
+        <link rel="stylesheet" href="card.css">
+        <script src="script.js"></script>
+        <script src="card.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <nav class="nav" id="nav">
+                    <a href="home.html">Cards&Cookies</a>
+                    <a href="#" class="icon-menu"><i class="fa-solid fa-bars menu"></i></a>
+                    <ul class="hidden-mobile">
+                        <li><a href="card.html" class="link">Cards</a></li>
+                        <li><a href="cookie.html">Cookies</a></li>
+                        <li><a href="contact.html" class="link">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div class="card1">
+                    <img src="img/card1.png" alt="Christmas Card Option 1">
+                </div>
+                <div class="sendEmail">
+                    <h2>Do you want to send someone this card?<br>Fill in the fancy form below:</h2>
+                    <form id="form">
+                        <div>
+                            <input type="email" id="formEmail" placeholder="email@example.com" name="formEmail" required />
+                        </div>
+                        <div>
+                            <input type="text" id="formFrom" placeholder="Your name" name="formFrom" required />
+                        </div>
+                        <div>
+                            <input type="text" id="formTo" placeholder="Recepient name" name="formTo" required />
+                        </div>
+                        <div>
+                            <textarea id="message" placeholder="Add a personal message" name="message" required></textarea>
+                        </div>
+                        <div class="btnDiv">
+                            <button id="sendButton" type="submit">Send the sweetness</button>
+                        </div>
+                    </form>
+                </div>
+            </main>
+            <footer>
+                <p>&copy; Powered by cookies</p>
+            </footer>
+        </div>
+        <script
+        src="https://kit.fontawesome.com/b53d6f6b39.js"
+        crossorigin="anonymous"
+        ></script>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+        emailjs.init('gd6weym3LqwukFAsB')
+        </script>
+    </body>
+</html>
