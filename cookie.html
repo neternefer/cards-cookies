@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookies</title>
+    <link rel="stylesheet" href="cookie.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="nav" id="nav">
+          <a href="home.html">Cards&Cookies</a>
+          <a href="#" class="icon-menu"><i class="fa-solid fa-bars menu"></i></a>
+          <ul class="hidden-mobile">
+            <li><a href="card.html" class="link">Cards</a></li>
+            <li><a href="cookie.html">Cookies</a></li>
+            <li><a href="contact.html" class="link">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="hero-section">
+          <h1>What kind of cookie are you?</h1>
+          <button class="button-quiz" id="button-quiz">Take a quiz</button>
+          <a
+            href="https://www.christmas-cookies.com/"
+            class="button-link"
+            target="_blank"
+            >Browse recipes</a
+          >
+        </section>
+        <section class="wrapper-quiz">
+          <div class="content-quiz">
+            <div class="text-quiz"></div>
+            <div class="option-list"></div>
+          </div>
+          <div class="footer-quiz">
+            <div class="question-total"></div>
+            <button class="button-next">Next</button>
+          </div>
+        </section>
+        <section class="wrapper-result">
+          <div class="icon-result"></div>
+          <div class="text-complete"></div>
+          <div class="text-score"></div>
+          <div class="buttons">
+            <button class="restart">Replay</button>
+            <button class="quit">Quit</button>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; Powered by cookies</p>
+      </footer>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/b53d6f6b39.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="questions.js"></script>
+    <script src="cookie.js"></script>
+  </body>
+</html>
