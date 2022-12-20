@@ -1,6 +1,7 @@
 window.onload=function(){
     const btn = document.getElementById('sendButton');
     const form = document.querySelector('form');
+    const msg = document.getElementById('send_form_status');
     
     form.addEventListener('submit', function(event) {
         event.preventDefault();
@@ -10,11 +11,11 @@ window.onload=function(){
 
    emailjs.sendForm(serviceID, templateID, this)
         .then(() => {
-            btn.value = 'Send Email';
+            msg.innerHTML = '<p>Thank you! Your request has been sent.</p>';
             form.reset();
         }, (err) => {
-            btn.value = 'Send Email';
-            alert(JSON.stringify(err));
+            msg.classList.add(".error");
+            msg.innerHTML = '<p>Something went wrong.</p>';
         });
     })
 };
