@@ -1,94 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
-
-  <meta charset="utf-8" />
-  <title>Contact page</title>
-  <link rel="stylesheet" href="contactstyle.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script>
-  $(document).ready(function() {
-    $("html").on("submit","#contact_form",function(e){
-      e.preventDefault();
-      $("#send_form_status").html('').hide();
-      var data=$("#contact_form").serialize();
-      $.post("send_form.php",data,function(res){
-        $("#send_form_status").html(res.msg).show();
-        if(res.status==1){ 
-          $("#contact_form")[0].reset();
-        } 
-      });
-    });
-  });
-  </script>
-
-</head>
-
-  <body>
-    <div class="container">
-      <header>
-        <nav>
-         <a href="home.html">Cards&Cookies</a>
-         <a href="#" class="icon-menu"><i class="fa-solid fa-bars menu"></i></a>
-          <ul class="hidden-mobile">
-          <li><a href="card.html">Cards</a></li>
-          <li><a href="cookie.html">Cookies</a></li>
-          <li><a href="contact.html">Contact</a></li>
-         </ul>
-        </nav>
-      </header>
-
-      <main>
-        <div id="form">
-    
-        <div id="contact">
-
-        <h1>Contact us</h1>
-
-          <div id="send_form_status"></div>
-
-            <form method="post" action="send_form.php" id="contact_form">
-            <div><label for="name">Name</label></div>
-            <div><input type="text" name="name" id="name" class="formField" /></div>
-            <div><label for="phone">Phone number</label></div>
-            <div><input type="text" name="phone" id="phone" class="formField" /></div>
-            <div><label for="email">Email address</label></div>
-            <div><input type="text" name="email" id="email" class="formField" /></div>
-            <div><label for="message">Your message</label></div>
-            <div><textarea name="message" id="message" class="formField"></textarea></div>
-            <div><button class="sendBtn">Send request</button></div>
-            </form>
-
-          </div>
-
-        </div>
-
-      </main>
-      <footer>
-          <p id="counter"></p>
-      </footer>
-
-
-      
-    </div>
-    
-    <script>
-       
-      const getChristmasDate = new Date("2022-12-25T00:00:00");
-      var countDownDate = new Date(getChristmasDate).getTime();
-      var x = setInterval(function() {
-          var currentDate = new Date().getTime();
-          var distance = countDownDate - currentDate;
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-          document.getElementById("counter").innerHTML = "Until Christmas only left: "+  days + " days " + hours + " hours " +
-          minutes + " minutes " + seconds + " seconds ";            
-      }, 1000);
-
-  </script>
-
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contact</title>
+      <link rel="stylesheet" href="contact.css">
+      <script src="script.js"></script>
+      <script src="contact.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script>
+        $(document).ready(function() {
+            $("html").on("submit","#contact_form",function(e){
+              e.preventDefault();
+              $("#send_form_status").html('').hide();
+              var data=$("#contact_form").serialize();
+              $.post("send_form.php",data,function(res){
+                $("#send_form_status").html(res.msg).show();
+                if(res.status==1){ 
+                  $("#contact_form")[0].reset();
+                } 
+              });
+            });
+        });
+      </script>
+    </head>
+    <body>
+      <div class="container">
+          <header>
+            <nav class="nav">
+              <a href="home.html">Cards&Cookies</a>
+              <a href="#" class="icon-menu"><i class="fa-solid fa-bars menu"></i></a>
+              <ul class="hidden-mobile">
+                <li><a href="card.html">Cards</a></li>
+                <li><a href="cookie.html">Cookies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </header>
+          <main>
+            <div id="form">
+              <div id="contact">
+                <h1>Contact us</h1>
+                <div id="send_form_status"></div>
+                <form method="post" action="send_form.php" id="contact_form">
+                  <div><label for="name">Name</label></div>
+                  <div><input type="text" name="name" id="name" class="formField" /></div>
+                  <div><label for="phone">Phone number</label></div>
+                  <div><input type="text" name="phone" id="phone" class="formField" /></div>
+                  <div><label for="email">Email address</label></div>
+                  <div><input type="text" name="email" id="email" class="formField" /></div>
+                  <div><label for="message">Your message</label></div>
+                  <div><textarea name="message" id="message" class="formField"></textarea></div>
+                  <div><button class="sendBtn">Send request</button></div>
+                </form>
+              </div>
+            </div>
+          </main>
+          <footer>
+            <p id="counter"></p>
+          </footer>
+      </div>  
+      <script
+      src="https://kit.fontawesome.com/b53d6f6b39.js"
+      crossorigin="anonymous"
+      ></script>    
   </body>
 </html>
