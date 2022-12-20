@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=DM+Serif+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(image1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "DM Serif Display", serif;
+  height: 100vh;
+  /*background-size: 1500px 1000px;*/
+  /*background-size: 1366px 768px;*/
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 40px;
+  color: #7a010a;
+  font-weight: 300;
+}
+
+h2 {
+  color: #5a5963;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  align-self: center;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 5rem auto 2.5rem;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+
+  /*added*/
+  align-items: center;
+  flex-direction: column;
+}
+
+/*removed*/
+/* li a {
+  padding-left: 80px;
+  color: #262629;
+  text-decoration: none;
+} */
+
+/*changed to this for mobile menu*/
+li {
+  padding-bottom: 1rem;
+  color: #fff;
+  font-weight: normal;
+  padding: .5rem 0;
+}
+
+/*added for easier button positioning*/
+.btn-part {
+  display: flex;
+}
+
+.myFancyBtn {
+  padding: 1rem;
+  font-family: "DM Serif Display", serif;
+  
+  /*changed so that button text is larger*/
+  /* font-size: 1rem; */
+  font-size: 1.2rem;
+  background-color: #7a010a;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  margin-top: 16px;
+
+  /*changed so that the buttons fit better side by side*/
+  /* margin-right: 30px; */
+  margin-right: 1rem;
+  border-radius: 10px;
+  max-width: max-content;
+
+  /*not needed with flex*/
+  /* margin: 2rem auto; */
+  line-height: 1.6;
+  /*added*/
+  cursor: pointer;
+}
+
+.hidden-mobile {
+  display: none;
+
+  /*added for mobile menu*/
+  position: absolute;
+  top: 4.76rem;
+  left: -1px;
+  align-items: flex-start;
+  padding-left: 1rem;
+  background-color: rgba(38, 38, 41, 1);
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #7a010a;
+  /*added*/
+  overflow: hidden;
+}
+
+footer {
+  color: #fff;
+  font-size: medium;
+
+  /*not needed with flex*/
+  /* text-align: center; */
+  /* padding: 30px; */
+
+  opacity: 0.5;
+  background-color: #7a010a;
+  
+  /*added*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  button {
+    font-size: 1.2rem;
+  }
+}
+
+/* @media (min-width: 900px) {
+  .hidden-desktop {
+    display: none;
+  }
+
+  .hidden-mobile {
+    display: flex;
+  }
+} */
+
+/*added for mobile menu*/
+@media screen and (min-width: 740px) {
+  .hidden-mobile {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    left: 2.5rem;
+    background: none;
+    justify-content: space-around;
+  }
+
+  .hidden-mobile li {
+    color: #262629;
+    font-weight: bold;
+  }
+
+  ul {
+    justify-content: end;
+  }
+
+  .icon-menu {
+    display: none;
+  }
+}
+
+/*added for controlling button/font sizes*/
+@media screen and (min-width: 1025px){
+
+  h1 {
+    font-size: 55px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  nav a {
+    font-size: 28px;
+  }
+
+  footer p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 900px) and (orientation: portrait) {
+  
+  h1 {
+    font-size: 62px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .myFancyBtn {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    margin-right: 2rem;
+  }
+
+  h1 {
+    font-size: 62px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  nav a {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 400px) and (orientation: portrait){
+  .myFancyBtn {
+    padding: 1rem 1.2rem;
+    font-size: 1.4rem;
+    margin-right: .75rem;
+  }
+}
+
+@media screen and (min-width: 390px) and (orientation: portrait) {
+  
+  h1 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 370px) and (orientation: portrait){
+  .myFancyBtn {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 300px) and (orientation: portrait){
+  .myFancyBtn {
+    padding: .5rem;
+  }
+}

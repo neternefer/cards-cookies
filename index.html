@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards&Cookies</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <!-- <p>Cards&Cookies</p> changed so that all nav items are links-->
+          <a href="home.html">Cards&Cookies</a>
+          <!-- hidden-desktop class changed to icon-menu class -->
+          <a href="#" class="icon-menu"
+            ><i class="fa-solid fa-bars menu"></i
+          ></a>
+          <ul class="hidden-mobile">
+            <li><a href="card.html">Cards</a></li>
+            <li><a href="cookie.html">Cookies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="main-text">
+          <h1>Ho ho ho!<br />Ready for Christmas?</h1>
+          <h2>Or still need to...</h2>
+        </div>
+        <div class="btn-part">
+          <a href="card.html" class="myFancyBtn">Send a card</a>
+          <a href="cookie.html" class="myFancyBtn">Bake cookies</a>
+        </div>
+      </main>
+      <!-- footer should be inside the container div -->
+      <footer>
+        <p>&copy; 2022 Powered by cookies</p>
+      </footer>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/b53d6f6b39.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- script for mobile menu -->
+    <script src="script.js"></script>
+  </body>
+</html>
