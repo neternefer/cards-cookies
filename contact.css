@@ -64,18 +64,9 @@ textarea.formField{
 }
 
 .sendBtn{
-    /* cursor: pointer; */
     padding: 1rem;
-    /* font-family: "DM Serif Display", serif; */
     font-size: 1.2rem;
-    /* background-color: #7a010a;
-    color: #fff; */
-    /* text-decoration: none;
-    border: none; */
-    /* margin-top: 16px; */
     margin-right: 1rem;
-    /* border-radius: 10px; */
-    /* max-width: max-content; */
     line-height: 1.6;
 } 
 
@@ -83,11 +74,7 @@ textarea.formField{
     button {
       font-size: 1.2rem;
     }
-
-    body {
-        height: auto;
-    }
-  }
+}
   
 @media screen and (min-width: 1025px){
   
