@@ -37,7 +37,8 @@ h1 {
     color: #7a010a;
 }
 
-button {
+button,
+.myFancyBtn {
     background-color: #7a010a;
     color:#fff ;
     font-family: 'DM Serif Display', serif;
