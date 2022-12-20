@@ -8,8 +8,8 @@ Final project of CFG Web Dev Kickstarter - a simple holiday card generator and c
 
 - [@Anna Nodzyńska](https://www.github.com/neternefer)
 - [@Kasia Soltysik](https://github.com/KasiaSol)
-- [@Aleksandra Jurczyk]()
-- [@Emilia Cłapa]()
+- [@Aleksandra Jurczyk](https://github.com/jurczykk)
+- [@Emilia Cłapa](https://github.com/proemilita)
 
 
 ## Demo
