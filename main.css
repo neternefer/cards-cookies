@@ -95,6 +95,20 @@ main {
     width: 100%;
 }
 
+.active {
+  color: #7a010a;
+}
+
+.hidden-mobile a:hover {
+  color: #5a5963;
+}
+
+button:hover,
+.myFancyBtn:hover {
+  color: #fff;
+  background: #5a5963;
+}
+
 /*MEDIA QUERIES*/
 @media screen and (min-width: 390px) and (orientation: portrait) {
     h1 {

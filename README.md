@@ -1,7 +1,7 @@
 
 # Cards and Cookies
 
-Final project of CFG Web Dev Kickstarter - a simple holiday card generator and cookie recipe repository.
+Final project of CFG Web Dev Kickstarter - a simple holiday card generator and cookie recipes repository.
 
 
 ## Authors
@@ -36,7 +36,7 @@ Landing Page             |  ECard
 
 **Main** HTML5, CSS, JavaScript, PHP
 
-**Libraries** Bootstrap, EmailJS
+**Libraries** EmailJS
 
 **SMTP** SendinBlue
 
