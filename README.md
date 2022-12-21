@@ -29,7 +29,7 @@ Final project of CFG Web Dev Kickstarter - a simple holiday card generator and c
 
 Landing Page             |  ECard                    |  Form Sumbit
 :-------------------------:|:-------------------------: |:-------------------------: |
-![](https://github.com/neternefer/cards-cookies/blob/main/img/landingPage.png?raw=true) | ![](https://github.com/neternefer/cards-cookies/blob/main/img/ecard.jpg?raw=true) | ![](https://github.com/neternefer/cards-cookies/blob/main/img/form.png?raw=true)
+![](https://github.com/neternefer/cards-cookies/blob/main/img/landingPage.png?raw=true) | ![](https://github.com/neternefer/cards-cookies/blob/main/img/ecard.jpg?raw=true) | ![](https://github.com/neternefer/cards-cookies/blob/main/img/formSubmit.png?raw=true)
 
 
 ## Tech Stack
