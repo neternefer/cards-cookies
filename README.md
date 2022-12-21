@@ -34,13 +34,13 @@ Landing Page             |  ECard                    |  Form Sumbit
 
 ## Tech Stack
 
-**Main** HTML5, CSS, JavaScript, PHP
+**Main** HTML5, CSS, JavaScript
 
 **Libraries** EmailJS
 
 **SMTP** SendinBlue
 
-**Hosting** 000Webhost, GitHub Pages
+**Hosting** GitHub Pages
 
 
 ##  
