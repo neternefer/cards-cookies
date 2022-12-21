@@ -3,6 +3,7 @@
 body {
   background-image: url(img/image1.jpg);
   text-align: left;
+  height: 100vh;
 }
 
 h1 {

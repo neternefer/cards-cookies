@@ -88,6 +88,12 @@ ul {
   }
 }
 
+@media screen and (device-width: 912px) and (device-height: 1368px) {
+  body {
+    height: 100vh;
+  }
+}
+
 @media screen and (min-width: 400px) and (orientation: portrait){
   .button-quiz {
     padding: 1rem 1.2rem;

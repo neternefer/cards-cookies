@@ -7,22 +7,27 @@
       <title>Contact</title>
       <link rel="stylesheet" href="main.css">
       <link rel="stylesheet" href="contact.css"> 
-      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script>
-  $(document).ready(function() {
-    $("html").on("submit","#contact_form",function(e){
-      e.preventDefault();
-      $("#send_form_status").html('').hide();
-      var data=$("#contact_form").serialize();
-      $.post("send_form.php",data,function(res){
-        $("#send_form_status").html(res.msg).show();
-        if(res.status==1){ 
-          $("#contact_form")[0].reset();
-        } 
-      });
-    });
-  });
-  </script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="script.js"></script>
+      <script src="contact.js"></script>  
+      <script>
+        $(document).ready(function() {
+          $("html").on("submit","#contact_form",function(e){
+            e.preventDefault();
+            $("#send_form_status").html('').hide();
+            var data=$("#contact_form").serialize();
+            $.post("send_form.php",data,function(res){
+              $("#send_form_status").html(res.msg).show();
+              if(res.status==1){ 
+              $("#contact_form")[0].reset();
+              } 
+            });
+          });
+        });
+      </script>
     </head>
     <body>
       <div class="container">
@@ -39,12 +44,9 @@
           </header>
           <main>
             <div id="form">
-    
-            <div id="contact">
-    
-            <h1>Contact us</h1>
-    
-              <div id="send_form_status"></div>
+              <div id="contact">
+                <h1>Contact us</h1>
+                <div id="send_form_status"></div>
     
                 <form method="post" action="send_form.php" id="contact_form">
                 <div><label for="name">Name</label></div>
@@ -59,9 +61,7 @@
                 </form>
     
               </div>
-    
             </div>
-    
           </main>
           <footer>
             <p id="counter"></p>
@@ -71,7 +71,5 @@
       src="https://kit.fontawesome.com/b53d6f6b39.js"
       crossorigin="anonymous"
       ></script>  
-      <script src="script.js"></script>
-      <script src="contact.js"></script>  
   </body>
 </html>
