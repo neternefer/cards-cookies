@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=DM+Serif+Display&display=swap");
 
 body {
-  background-image: url(/img/image1.jpg);
+  background-image: url("https://github.com/neternefer/cards-cookies/blob/main/img/image1.jpg");
   text-align: left;
   height: 100vh;
 }
