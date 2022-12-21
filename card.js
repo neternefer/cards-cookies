@@ -1,5 +1,5 @@
 window.onload=function(){
-    const btn = document.getElementById('sendButton');
+    /**CARD FORM SUBMIT */
     const form = document.querySelector('form');
     const msg = document.getElementById('send_form_status');
     
@@ -17,5 +17,5 @@ window.onload=function(){
             msg.classList.add(".error");
             msg.innerHTML = '<p>Something went wrong.</p>';
         });
-    })
+    });
 };

@@ -48,22 +48,6 @@ textarea.formField{
     height: 70px;
 }
 
-#send_form_status{
-    border: 1px dashed #ccc;
-    display: none;
-    padding: 0 10px; 
-    margin: 10px 0;
-}
-
-#link{
-    width: auto;
-    height: 42px;
-    padding: 20px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
 .sendBtn{
     padding: 1rem;
     font-size: 1.2rem;
@@ -74,7 +58,17 @@ textarea.formField{
 footer {
     padding-left: .3rem;
     padding-right: .3rem;
-  }
+}
+
+#send_form_status{
+    padding: 0 10px; 
+    margin: 10px 0;
+    color: #6DD143
+}
+  
+.error {
+    color: #F54140
+}
 
 @media screen and (max-width: 300px) and (orientation: portrait){
     .sendBtn {
@@ -150,9 +144,5 @@ footer {
     }
 }
   
-
-  
-.status_ok{color: #6DD143}
-.status_err{color: #F54140};
 
   
