@@ -14,7 +14,7 @@ Final project of CFG Web Dev Kickstarter - a simple holiday card generator and c
 
 ## Demo
 
-[Live](https://neternefer.github.io/cards-cookies/)
+[Live version available on Github Pages](https://neternefer.github.io/cards-cookies/)
 
 
 ## Features
